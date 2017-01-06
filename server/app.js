@@ -17,3 +17,5 @@ MongoDB.once('open', function () {
 app.listen('2020', function(){
   console.log('server listening on 2020');
 });
+
+app.use( express.static( 'public' ) );
